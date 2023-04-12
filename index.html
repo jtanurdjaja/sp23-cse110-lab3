@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lab 2 Meeting Notes</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/puppy-icon" href="/screenshots/puppy.ico">
+  </head>
+  <body>
+    <nav>
+        <a href="#first-hour">First Hour</a>
+        <a href="#second-hour">Second Hour</a>
+        <a href="#FAQ">FAQ</a>    
+    </nav>
+    <header>
+        <h1>CSE 110 Lab 2</h1>
+        <h2>Lab 2 Meeting Notes on HTML</h2>
+        <h2>Date: 4/12/2023</h2>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <h2>Meeting Attendance</h2>
+            <form>
+                <fieldset>
+                    <input type="checkbox" name="student1">
+                    <label for="student1">Jennifer</label><br><br>
+                    <input type="checkbox" name="student2">
+                    <label for="student2">Anne</label><br><br>
+                    <input type="checkbox" name="student3">
+                    <label for="student3">Tanurdjaja</label>
+                </fieldset>
+            </form>
+            <h2>Schedule for next meeting and attendees</h2>
+            <p>Please enter a desired date for the next meeting along with your name<br> in the provided text box:</p>
+            <input type="date">
+            <input type="text"> 
+            <button type="button">Submit</button>
+            <br><br>
+            <label><b>Select a time:</b></label>
+            <select>
+                <option value="11am">11AM - 12PM</option>
+                <option value="1pm">1PM - 2PM</option>
+                <option value="2pm">2PM - 3PM</option>
+            </select>
+            <br>
+            <br>
+            <label><b>Topic(s) to cover next meeting:</b></label>
+            <input list="topics">
+            <datalist id="topics">
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Teamwork">Teamwork</option>
+            </datalist> 
+        </section>
+        <hr>
+        <section>
+            <h2 id="first-hour"><span style="color:maroon">First Hour of the Meeting: Set Up</span></h2>
+            <div class="objectiveDiv">
+                <p>Objective:</p>
+                <ul>
+                    <li>Learn the basics of HTML</li>
+                    <li>Practice HTML</li>
+                    <li>Create a Meeting Notes page with HTML</li>
+                </ul>
+            </div>
+            <h2>Agenda</h2>
+            <h3>Setting up environment for HTML</h3>
+            <p>To set up the environment, we need to do the following:</p>
+            <ol>
+                <li><b>Fork</b> the Lab2-Starter repo</li>
+                <li>Install the <strong>LiveServer</strong> on VSCode Studio</li>
+                <li>Add the starter HTML code to the <i>index.html</i> file</li>
+            </ol>
+        </section>
+
+        <hr>
+        
+        <section>
+            <h2 id="second-hour"><span style="color:maroon">Second Hour of the Meeting: Documentation</span></h2>
+            <p>In the second hour of the meeting, we are practicing different types of tags used in HTML.<br><br>There are many different inline text semantics that are used in HTML that can be used to catch the <em>attention</em> of the user, including <b>bolding</b> text. <br><br> For practice, we coded <b>sections</b> like the following: <br></p>
+            <img src="/screenshots/html_pratice.png" width="300">
+            <br>
+            <p>Additionally, we learned how to add recordings. Below is a recording of a side by side comparison of the HTML and what the user sees.</p>
+            <video width="550" height="300" controls muted>
+                <source src="/screenshots/recording.mp4" type="video/mp4">
+            </video>
+            <p>We also learned how to add audio files into our web pages, such as the audio below, which was music played during the meeting.</p>
+            <audio controls>
+                <source src="/screenshots/audio.mp4" type="audio/mp4">
+            </audio>
+            <fieldset>
+                <h3>Completed Today</h3>
+                <input type="radio" name="choice1">
+                <label for="choice1">Forking repo</label><br>
+                <input type="radio" name="choice2">
+                <label for="choice2">Adding LiveServer extension</label><br>
+                <input type="radio" name="choice3">
+                <label for="choice3">Finished webpage</label><br>
+            </fieldset>
+        </section>
+        <hr>
+        <section>
+            <h2 id="FAQ">Frequently Asked Questions</h2>
+            <details>
+                <summary>What is HTML?</summary>
+                <p>HTML stands for HyperText Markup Language. It is used for creating web pages alongside CSS and JavaScript.</p>
+            </details>
+            <details>
+                <summary>How do you fork a repository?</summary>
+                <p>In the upper right corner of the repository that you want to fork, click on the fork icon that is next to the star icon button.</p>
+            </details>
+            <br>
+            <form>
+                <textarea rows="10" cols="80">If there are any comments, questions, or concerns, please enter them here.</textarea>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>This is an introduction to using HTML to write meeting notes.</p>
+    </footer>
+    
+  </body>
+</html>

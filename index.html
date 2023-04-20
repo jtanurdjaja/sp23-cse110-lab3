@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Lab 2 Meeting Notes</title>
+    <title id="meeting-header">Lab 2 Meeting Notes</title>
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="screenshots/puppy.ico?">
-  </head>
+    <link rel="stylesheet" href="style.css">
+</head>
   <body>
     <nav>
         <a href="#first-hour">First Hour</a>
@@ -19,7 +20,7 @@
     <hr>
     <main>
         <section>
-            <h2>Meeting Attendance</h2>
+            <h2 id="attendance">Meeting Attendance</h2>
             <form>
                 <fieldset>
                     <input type="checkbox">Jennifer<br><br>
@@ -82,8 +83,8 @@
 
             <p>We also learned how to add audio files into our web pages, such as the audio below, which was music played during the meeting.</p>
             <audio controls src="screenshots/audio.mp4"></audio>
-            <fieldset>
-                <h3>Completed Today</h3>
+            <fieldset id="field">
+                <legend>Completed Today</legend>
                 <input type="radio">Forking repo<br>
                 <input type="radio">Adding LiveServer extension<br>
                 <input type="radio">Finished webpage<br>
@@ -91,8 +92,8 @@
         </section>
         <hr>
         <section>
-            <h2 id="FAQ">Frequently Asked Questions</h2>
-            <details>
+            <h2>Frequently Asked Questions</h2>
+            <details >
                 <summary>What is HTML?</summary>
                 <p>HTML stands for HyperText Markup Language. It is used for creating web pages alongside CSS and JavaScript.</p>
             </details>

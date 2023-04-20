@@ -1,1 +1,27 @@
 /*Beginning of css page*/
+
+/* Adding color to the background */
+body {
+    background-color: rgb(189, 210, 230);
+}
+
+/* adding color to the header of the meeting notes */
+h1 {
+    color: rgb(53, 53, 148);
+}
+
+/* adding color to the meeting attendance */
+h2 {
+    color: #33475b;
+}
+
+/* Setting standard header color */
+h3 {
+    color: #33475b;
+}
+
+/* Adding completed task field */
+#field {
+    border-color: darkmagenta;
+    background: hsl(309, 70%, 87%);
+}

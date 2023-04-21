@@ -1,18 +1,44 @@
-/*Beginning of css page*/
+/* Beginning of external css page*/
 
-/* Adding color to the background */
-body {
-    background-color: rgb(189, 210, 230);
+/* Including a third-party font */
+@font-face {
+    font-family: 'Bruno Ace';
+}
+
+/* Adding media query that hides media if the screen too small */
+@media only screen and (max-width: 800px) {
+    #headerImg {
+        display: none;
+    }
+
+    .agenda {
+        grid-column: 1/3;
+    }
+
+    .htmlSetup{
+        grid-column: 1/3;
+    }
+
+    .nextMeetingSelect {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
 
 /* adding color to the header of the meeting notes */
 h1 {
-    color: rgb(53, 53, 148);
+    color: white;
+    background-color: rgb(53, 53, 148);
+    font-size: 50px;
+    font-family: 'Bruno Ace';
 }
 
 /* adding color to the meeting attendance */
 h2 {
+    text-decoration: underline;
     color: #33475b;
+    font-size: 27px;
 }
 
 /* Setting standard header color */
@@ -20,8 +46,169 @@ h3 {
     color: #33475b;
 }
 
+.header {
+    background-color: rgb(53, 53, 148);
+}
+
+#headerImg {
+    position: absolute;
+    left: 11px;
+    top: 45px;
+    width: 100px;
+}
+
+.header h3{
+    color: white;
+    margin-right: 15vw;
+    display: inline;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(13, 63, 107);
+}
+
+.nav a {
+    margin-left: 5px;
+    color:aliceblue;
+    margin-right: 15px;
+    font-family: 'Lucida Sans Unicode';
+    text-decoration: none;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a:hover{
+    color:#33475b;
+    background-color:rgb(141, 182, 219);
+}
+
+.nav a:active {
+    color:#33475b;
+    background-color:rgb(141, 182, 219);
+    font-size: 120%;
+}
+
+.attendance {
+    border-style: double;
+    border-color: blueviolet;
+    border-width: 5px;
+    border-radius: 5%;
+
+}
+
+.date-input {
+    margin-right: 0.25em;
+}
+
+.submit-button {
+    margin-left: 0.25em;
+}
+
 /* Adding completed task field */
 #field {
+    margin-top: 10px;
+    margin-bottom: 20px;
     border-color: darkmagenta;
     background: hsl(309, 70%, 87%);
+}
+
+.first-hour-section {
+    padding: 5px 10px 5px 5px;
+    font-family: 'Lucida Sans';
+}
+
+.listObjectives li {
+    font-size: 1.2rem;
+}
+
+.environmentSetup {
+    font-size: 1.4 rem;
+}
+
+.second-hour-section {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 5px;
+    font-size: 0.5 em;
+    font-family: 'Lucida Sans';
+}
+
+.img {
+    display: block;
+    max-width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#audio {
+    position: relative;
+    display: block;
+    width: 300px;
+    min-width: fit-content;
+    margin: 30px auto 20px;
+}
+
+#video {
+    display: inline-block;
+    width: 80vw;
+    height: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Adding flex-container for code/meeting images/audio/video */
+.flex-container {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+/* Adding flex-container for meeting selections */
+.nextMeetingSelect {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.meetingDate {
+    display: flex;
+    flex-direction: column;
+}
+
+.dateInput {
+    display: flex;
+    flex-direction: row;
+}
+
+.meetingTime {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.meetingTopic {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+/* Using grid to space out the objective, agenda, and html setup */
+.setup {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly, space-between;
+    align-content: center;
 }

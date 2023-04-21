@@ -18,7 +18,7 @@
     <header class="header">
         <h1 style="text-align: center">CSE 110 Lab 2</h1>
         <img src="screenshots/puppy.png" alt="puppy logo" id="headerImg">
-        <h3>Lab 2 Meeting Notes on HTML</h2>
+        <h3>Lab 2 Meeting Notes on HTML</h3>
         <h3>Date: 4/12/2023</h2>
     </header>
     <nav class="nav">
@@ -49,7 +49,7 @@
                         <button class="submit-button" type="button">Submit</button>
                     </div>
                 </div>
-                <div class="meetingTime">
+                <div class="meeting-Time">
                     <label><b>Select a time:</b></label>
                     <select>
                         <option value="11am">11AM - 12PM</option>
@@ -57,7 +57,7 @@
                         <option value="2pm">2PM - 3PM</option>
                     </select>
                 </div>
-                <div class="meetingTopic">
+                <div class="meeting-Topic">
                     <label><b>Topic(s) to cover next meeting:</b></label>
                     <input list="topics">
                     <datalist id="topics">
@@ -71,8 +71,8 @@
         <hr>
         <section class="first-hour-section" id="first-hour">
             <h2><span>First Hour of the Meeting: Set Up</span></h2>
-            <div class="setup">
-                <div class="objectiveDiv">
+            <div class="first-hour-items">
+                <div class="setup-objective">
                     <h3>Objective:</h3>
                     <ul class="listObjectives">
                         <li>Learn the basics of HTML</li>
@@ -80,16 +80,16 @@
                         <li>Create a Meeting Notes page with HTML</li>
                     </ul>
                 </div>
-                <div class="agenda">
+                <div class="setup-environment">
                     <h3>Setting up environment for HTML</h3>
                     <p>To set up the environment, we need to do the following:</p>
-                    <ol class="environmentSetup">
+                    <ol class="environmentList">
                         <li><b>Fork</b> the Lab2-Starter repo</li>
                         <li>Install the <strong>LiveServer</strong> on VSCode Studio</li>
                         <li>Add the starter HTML code to the <i>index.html</i> file</li>
                     </ol>
                 </div>
-                <div class="htmlSetup">
+                <div class="setup-html">
                     <h3>HTML setup</h3>
                     <p>To set up the items for HTML, we need to do the following: </p>
                     <ol class="htmlList">
@@ -105,15 +105,19 @@
         <section id="second-hour">
             <div class="second-hour-section">
                 <h2><span>Second Hour of the Meeting: Documentation</span></h2>
-                <p>In the second hour of the meeting, we are practicing different types of tags used in HTML.<br><br>There are many different inline text semantics that are used in HTML that can be used to catch the <em>attention</em> of the user, including <b>bolding</b> text. <br><br> For practice, we coded <b>sections</b> like the following: <br></p>
                 <div class="flex-container">
-                    <img src="screenshots/html_pratice.png" alt="HTML image" width="300" class="img">
-                    <br>
-                    <p>Additionally, we learned how to add recordings. Below is a recording of a side by side comparison of the HTML and what the user sees.</p>
-                    <video id="video" width="550" height="300" src="screenshots/recording.mp4" controls muted></video>
-
-                    <p>We also learned how to add audio files into our web pages, such as the audio below, which was music played during the meeting.</p>
-                    <audio id="audio" controls src="screenshots/audio.mp4"></audio>
+                    <div class="screenshot">
+                        <p>In the second hour of the meeting, we are practicing different types of tags used in HTML.<br><br>There are many different inline text semantics that are used in HTML that can be used to catch the <em>attention</em> of the user, including <b>bolding</b> text. <br><br> For practice, we coded <b>sections</b> like the following: <br></p>
+                        <img src="screenshots/html_pratice.png" alt="HTML image" width="300" class="img">
+                    </div>
+                    <div class="video">
+                        <p>Additionally, we learned how to add recordings. Below is a recording of a side by side comparison of the HTML and what the user sees.</p>
+                        <video id="video" width="550" height="300" src="screenshots/recording.mp4" controls muted></video>
+                    </div>
+                    <div class="audio">
+                        <p>We also learned how to add audio files into our web pages, such as the audio below, which was music played during the meeting.</p>
+                        <audio id="audio" controls src="screenshots/audio.mp4"></audio>
+                    </div>
                 </div>
                 <fieldset id="field">
                     <legend>Completed Today</legend>
@@ -126,11 +130,11 @@
         <hr>
         <section>
             <h2 id="FAQ">Frequently Asked Questions</h2>
-            <details >
+            <details id="details1">
                 <summary>What is HTML?</summary>
                 <p>HTML stands for HyperText Markup Language. It is used for creating web pages alongside CSS and JavaScript.</p>
             </details>
-            <details>
+            <details id="details2">
                 <summary>How do you fork a repository?</summary>
                 <p>In the upper right corner of the repository that you want to fork, click on the fork icon that is next to the star icon button.</p>
             </details>

@@ -1,10 +1,37 @@
-/*Beginning of external css page*/
+/* Beginning of external css page*/
+
+/* Including a third-party font */
+@font-face {
+    font-family: 'Bruno Ace';
+}
+
+/* Adding media query that hides media if the screen too small */
+@media only screen and (max-width: 800px) {
+    #headerImg {
+        display: none;
+    }
+
+    .agenda {
+        grid-column: 1/3;
+    }
+
+    .htmlSetup{
+        grid-column: 1/3;
+    }
+
+    .nextMeetingSelect {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
 
 /* adding color to the header of the meeting notes */
 h1 {
     color: white;
     background-color: rgb(53, 53, 148);
     font-size: 50px;
+    font-family: 'Bruno Ace';
 }
 
 /* adding color to the meeting attendance */
@@ -17,6 +44,59 @@ h2 {
 /* Setting standard header color */
 h3 {
     color: #33475b;
+}
+
+.header {
+    background-color: rgb(53, 53, 148);
+}
+
+#headerImg {
+    position: absolute;
+    left: 11px;
+    top: 45px;
+    width: 100px;
+}
+
+.header h3{
+    color: white;
+    margin-right: 15vw;
+    display: inline;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(13, 63, 107);
+}
+
+.nav a {
+    margin-left: 5px;
+    color:aliceblue;
+    margin-right: 15px;
+    font-family: 'Lucida Sans Unicode';
+    text-decoration: none;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a:hover{
+    color:#33475b;
+    background-color:rgb(141, 182, 219);
+}
+
+.nav a:active {
+    color:#33475b;
+    background-color:rgb(141, 182, 219);
+    font-size: 120%;
 }
 
 .attendance {
@@ -73,6 +153,7 @@ h3 {
 }
 
 #audio {
+    position: relative;
     display: block;
     width: 300px;
     min-width: fit-content;
@@ -87,7 +168,47 @@ h3 {
     margin-right: auto;
 }
 
+/* Adding flex-container for code/meeting images/audio/video */
+.flex-container {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
 
-.detail2 {
+/* Adding flex-container for meeting selections */
+.nextMeetingSelect {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.meetingDate {
+    display: flex;
+    flex-direction: column;
+}
+
+.dateInput {
+    display: flex;
+    flex-direction: row;
+}
+
+.meetingTime {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.meetingTopic {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+/* Using grid to space out the objective, agenda, and html setup */
+.setup {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly, space-between;
+    align-content: center;
 }

@@ -130,7 +130,7 @@ h3 {
 }
 
 .first-hour-section {
-    padding: 5px 10px 5px 5px;
+    padding: 5px 10mm 5mm 5px;
 }
 
 .listObjectives li {
@@ -138,7 +138,7 @@ h3 {
 }
 
 .environmentList {
-    font-size: 1.4 rem;
+    font-size: 1.4rem;
 }
 
 /* Adding padding, margin, and structuring the second hour section */
@@ -147,7 +147,7 @@ h3 {
     padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 5px;
-    font-size: 0.5 em;
+    font-size: 1em;
 }
 
 .img {
